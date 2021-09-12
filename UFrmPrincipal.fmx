@@ -1,0 +1,212 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  ClientHeight = 480
+  ClientWidth = 640
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = xFF9EADBA
+    Size.Width = 640.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object RecMenu: TRectangle
+    Align = Left
+    Fill.Color = xFFC3CFD9
+    Position.Y = 83.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 397.000000000000000000
+    Size.PlatformDefault = False
+    object btnDashboard: TSpeedButton
+      Align = Top
+      StyledSettings = []
+      Size.Width = 193.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'DashBoard'
+      TextSettings.Font.Family = 'Cambria'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = btnDashboardClick
+    end
+    object btnRelatorio: TSpeedButton
+      Align = Top
+      StyledSettings = []
+      Position.Y = 82.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Relatorio'
+      TextSettings.Font.Family = 'Cambria'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = btnRelatorioClick
+    end
+    object btnFuncionario: TSpeedButton
+      Align = Top
+      StyledSettings = []
+      Position.Y = 41.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Funcionario'
+      TextSettings.Font.Family = 'Cambria'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = btnFuncionarioClick
+    end
+  end
+  object Rectangle2: TRectangle
+    Align = Top
+    Fill.Color = xFF96C3EC
+    Position.Y = 33.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object SpeedButton1: TSpeedButton
+      Align = Left
+      StyledSettings = []
+      Images = ImageList1
+      ImageIndex = 0
+      Size.Width = 201.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Gestor Bimer'
+      TextSettings.Font.Family = 'Cambria'
+      TextSettings.Font.Size = 22.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+    end
+    object SpeedButton2: TSpeedButton
+      Align = Right
+      StyledSettings = []
+      Images = ImageList1
+      Position.X = 568.000000000000000000
+      Size.Width = 72.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Sair'
+      TextSettings.Font.Family = 'Cambria'
+      TextSettings.Font.Size = 22.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = SpeedButton2Click
+    end
+    object lblUsuario: TLabel
+      Align = Right
+      AutoSize = True
+      StyledSettings = []
+      Position.X = 306.000000000000000000
+      Size.Width = 262.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Cambria'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      Text = 'lblUsuario'
+      TabOrder = 2
+    end
+  end
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 447.000000000000000000
+    Size.Height = 397.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object RecPrincipal: TRectangle
+      Align = Client
+      Fill.Color = xFF6F7D89
+      Size.Width = 447.000000000000000000
+      Size.Height = 397.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+  end
+  object ImageList1: TImageList
+    Source = <
+      item
+        MultiResBitmap.Height = 377
+        MultiResBitmap.Width = 377
+        MultiResBitmap.LoadSize = 0
+        MultiResBitmap = <
+          item
+            Width = 377
+            Height = 377
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000001790000017908060000007A035A
+              3D000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              041D49444154785EEDD4D10D02310C05C1CB554669746E4874F48056331FB65E
+              037B01D0B5F699AFB30048B99F0F4090C80384893C4098C80384893C4098C803
+              84893C4098C80384893C4098C80384893C4098C80384893C4098C80384893C40
+              98C80384893C4098C80384893C4098C80384893C4098C80384893C4098C80384
+              893C4098C80384893C4098C80384893C4098C80384893C4098C80384893C4098
+              C80384893C4098C80384893C4098C80384893C4098C80384893C4098C8038489
+              3C4098C80384893C4098C80384893C4098C80384893C4098C80384893C4098C8
+              0384893C4098C80384893C4098C80384893C4098C80384893C4098C80384893C
+              4098C80384893C4098C80384893C4098C80384893C4098C80384893C40D8DA67
+              66DE670100000000000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000000000000000
+              000000000000000000000000000000000000000000000000000000FF65ED3333
+              AFB30048F9457ECE0220E57E3E0041220F1026F20061220F1026F20061220F10
+              26F20061220F1026F20061220F1026F20061220F1026F20061220F1026F20061
+              220F1026F20061220F1026F20061220F1026F20061220F1026F20061220F1026
+              F20061220F1026F20061220F1026F20061220F1026F20061220F1026F2006122
+              0F1026F20061220F1026F20061220F1026F20061220F1026F20061220F1026F2
+              0061220F1026F20061220F1026F20061220F1026F20061220F1026F20061220F
+              1026F20061220F1026F20061220F1026F20061220F1026F20061220F1026F200
+              61220F1026F20061220F1026F20061220F1026F20061220F1026F200616B9F99
+              799D050000000000000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000FC97B5CFCCBC
+              CF0220E517F9390B8094FBF90004893C4098C80384893C4098C80384893C4098
+              C80384893C4098C80384893C4098C80384893C4098C80384893C4098C8038489
+              3C4098C80384893C4098C80384893C4098C80384893C4098C80384893C4098C8
+              0384893C4098C80384893C4098C80384893C4098C80384893C4098C80384893C
+              4098C80384893C4098C80384893C4098C80384893C4098C80384893C4098C803
+              84893C4098C80384893C4098C80384893C4098C80384893C4098C80384893C40
+              98C80384893C4098C80384893C4098C80384893C4098C80384893C4098C80384
+              893C4098C80384893C4098C80384893C4098C80384893C4098C803645DD7078C
+              C01B0E1A8536580000000049454E44AE426082}
+            FileName = 'C:\Users\Jan\Desktop\Bimer\img\menu.png'
+          end>
+        Name = 'menu'
+      end>
+    Destination = <
+      item
+        Layers = <
+          item
+            Name = 'menu'
+            SourceRect.Right = 377.000000000000000000
+            SourceRect.Bottom = 377.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'menu'
+            SourceRect.Right = 377.000000000000000000
+            SourceRect.Bottom = 377.000000000000000000
+          end>
+      end>
+    Left = 424
+    Top = 296
+  end
+end

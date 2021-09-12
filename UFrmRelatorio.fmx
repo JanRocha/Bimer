@@ -1,0 +1,177 @@
+object frmRelatorio: TfrmRelatorio
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'Form3'
+  ClientHeight = 480
+  ClientWidth = 783
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Align = Top
+    StyledSettings = [Style]
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Size.Width = 763.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.FontColor = xFF788896
+    Text = 'Relat'#243'rio'
+    TabOrder = 0
+  end
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = xFF788896
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 41.000000000000000000
+    Size.Width = 763.000000000000000000
+    Size.Height = 2.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object Label2: TLabel
+    Position.X = 7.000000000000000000
+    Position.Y = 63.000000000000000000
+    Text = 'Login'
+    TabOrder = 4
+  end
+  object cmbLogin: TComboBox
+    Position.X = 6.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+  end
+  object cmbFuncao: TComboBox
+    Position.X = 209.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+  object Label3: TLabel
+    Position.X = 210.000000000000000000
+    Position.Y = 63.000000000000000000
+    Text = 'Fun'#231#227'o'
+    TabOrder = 3
+  end
+  object Label4: TLabel
+    Position.X = 413.000000000000000000
+    Position.Y = 63.000000000000000000
+    Size.Width = 78.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Data Inicial'
+    TabOrder = 2
+  end
+  object Label5: TLabel
+    Position.X = 500.000000000000000000
+    Position.Y = 63.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Data Final'
+    TabOrder = 1
+  end
+  object dtInicial: TDateEdit
+    Date = 44441.000000000000000000
+    Position.X = 412.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 83.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+  end
+  object dtFinal: TDateEdit
+    Date = 44464.000000000000000000
+    Position.X = 498.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 83.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+  end
+  object Rectangle3: TRectangle
+    Fill.Color = xFF2C88D9
+    Position.X = 680.000000000000000000
+    Position.Y = 73.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = Resource
+    Stroke.Cap = Round
+    object btnImprimir: TSpeedButton
+      Align = Client
+      StyledSettings = []
+      Size.Width = 97.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Imprimir'
+      TextSettings.Font.Family = 'Cambria'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+    end
+  end
+  object Rectangle2: TRectangle
+    Fill.Color = xFF2C88D9
+    Position.X = 589.000000000000000000
+    Position.Y = 75.000000000000000000
+    Size.Width = 87.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = Resource
+    Stroke.Cap = Round
+    object SpeedButton1: TSpeedButton
+      Align = Client
+      StyledSettings = []
+      Size.Width = 87.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Filtrar'
+      TextSettings.Font.Family = 'Cambria'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = SpeedButton1Click
+    end
+  end
+  object SG: TStringGrid
+    Anchors = [akLeft, akTop, akBottom]
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 8.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 769.000000000000000000
+    Size.Height = 305.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    RowCount = 0
+    Viewport.Width = 765.000000000000000000
+    Viewport.Height = 280.000000000000000000
+    object StringColumn1: TStringColumn
+      Header = 'Login'
+      Size.Width = 169.000000000000000000
+    end
+    object StringColumn3: TStringColumn
+      Header = 'Tipo'
+    end
+    object StringColumn4: TStringColumn
+      Header = 'Descri'#231#227'o'
+      Size.Width = 394.000000000000000000
+    end
+    object StringColumn2: TStringColumn
+      Header = 'Data'
+    end
+  end
+end

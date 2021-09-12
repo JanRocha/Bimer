@@ -1,0 +1,114 @@
+object frmFuncionario: TfrmFuncionario
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 949
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Align = Top
+    StyledSettings = [Style]
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Size.Width = 929.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.FontColor = xFF788896
+    Text = 'Controle de Funcionarios'
+    TabOrder = 0
+  end
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = xFF788896
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 41.000000000000000000
+    Size.Width = 929.000000000000000000
+    Size.Height = 2.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+  object SG: TStringGrid
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 4.000000000000000000
+    Position.Y = 156.000000000000000000
+    Size.Width = 940.000000000000000000
+    Size.Height = 316.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    RowCount = 0
+    OnSelectCell = SGSelectCell
+    Viewport.Width = 940.000000000000000000
+    Viewport.Height = 316.000000000000000000
+    object SGCodigo: TStringColumn
+      Header = 'C'#243'digo'
+    end
+    object SGLogin: TStringColumn
+      Header = 'Login'
+    end
+    object SGNome: TStringColumn
+      Header = 'Nome'
+    end
+    object SGFuncao: TStringColumn
+      Header = 'Fun'#231#227'o'
+    end
+    object SGAdmissao: TColumn
+      Header = 'Admiss'#227'o'
+    end
+    object SGEditar: TStringColumn
+      Size.Width = 80.000000000000000000
+    end
+    object SGExcluir: TStringColumn
+    end
+    object SGParecer: TStringColumn
+    end
+  end
+  object Rectangle3: TRectangle
+    Fill.Color = xFF2C88D9
+    Position.X = 10.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 211.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = Resource
+    Stroke.Cap = Round
+    object btnAdicionar: TSpeedButton
+      Align = Client
+      Anchors = [akLeft, akRight, akBottom]
+      StyledSettings = []
+      Size.Width = 211.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Adicionar'
+      TextSettings.Font.Family = 'Cambria'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = btnAdicionarClick
+    end
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Anchors = [akTop, akRight]
+    TabOrder = 4
+    TextSettings.Font.Size = 26.000000000000000000
+    Position.X = 749.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Pesquisar'
+    StyledSettings = [Family, Style, FontColor]
+  end
+end

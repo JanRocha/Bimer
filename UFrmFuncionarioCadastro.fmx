@@ -1,0 +1,225 @@
+object frmFuncionarioCadastro: TfrmFuncionarioCadastro
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'Form1'
+  ClientHeight = 472
+  ClientWidth = 640
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object edtLogin: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 16.000000000000000000
+    Position.X = 14.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 222.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+  end
+  object Label1: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 14.000000000000000000
+    Position.Y = 87.000000000000000000
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Login'
+    TabOrder = 13
+  end
+  object Label2: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 248.000000000000000000
+    Position.Y = 88.000000000000000000
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Nome'
+    TabOrder = 12
+  end
+  object edtNome: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 16.000000000000000000
+    Position.X = 240.000000000000000000
+    Position.Y = 108.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyledSettings = [Style, FontColor]
+  end
+  object Label3: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 256.000000000000000000
+    Position.Y = 155.000000000000000000
+    Size.Width = 107.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Salario'
+    TabOrder = 11
+  end
+  object edtSalario: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 255.000000000000000000
+    Position.Y = 174.000000000000000000
+    Size.Width = 124.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object dtAdmissao: TDateEdit
+    Date = 44450.000000000000000000
+    Position.X = 381.000000000000000000
+    Position.Y = 174.000000000000000000
+    Size.Width = 103.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+  object dtDesligamento: TDateEdit
+    Date = 44450.000000000000000000
+    Position.X = 487.000000000000000000
+    Position.Y = 173.000000000000000000
+    Size.Width = 111.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+  end
+  object cmbFuncao: TComboBox
+    Position.X = 18.000000000000000000
+    Position.Y = 175.000000000000000000
+    Size.Width = 234.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object memoObservacao: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 18.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 605.000000000000000000
+    Size.Height = 177.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Viewport.Width = 601.000000000000000000
+    Viewport.Height = 173.000000000000000000
+  end
+  object Rectangle3: TRectangle
+    Fill.Color = xFF2C88D9
+    Position.X = 319.000000000000000000
+    Position.Y = 420.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 37.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = Resource
+    Stroke.Cap = Round
+    object btnEntrar: TSpeedButton
+      Align = Client
+      StyledSettings = []
+      Size.Width = 150.000000000000000000
+      Size.Height = 37.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Salvar'
+      TextSettings.Font.Family = 'Cambria'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = btnEntrarClick
+    end
+  end
+  object Label4: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 18.000000000000000000
+    Position.Y = 156.000000000000000000
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Fun'#231#227'o'
+    TabOrder = 10
+  end
+  object Label5: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 380.000000000000000000
+    Position.Y = 153.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Admiss'#227'o'
+    TabOrder = 9
+  end
+  object Label6: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 488.000000000000000000
+    Position.Y = 154.000000000000000000
+    Size.Width = 106.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Desligamento'
+    TabOrder = 8
+  end
+  object Label7: TLabel
+    StyledSettings = [Style, FontColor]
+    Position.X = 24.000000000000000000
+    Position.Y = 216.000000000000000000
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'Observa'#231#227'o'
+    TabOrder = 3
+  end
+  object edtFoto: TSpeedButton
+    StyledSettings = [Style, FontColor]
+    Position.X = 528.000000000000000000
+    Position.Y = 105.000000000000000000
+    Text = 'Foto'
+    TextSettings.Font.Family = 'Cambria'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = edtFotoClick
+  end
+  object Rectangle2: TRectangle
+    Fill.Color = xFF2C88D9
+    Position.X = 472.000000000000000000
+    Position.Y = 420.000000000000000000
+    Size.Width = 150.000000000000000000
+    Size.Height = 37.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = Resource
+    Stroke.Cap = Round
+    object SpeedButton2: TSpeedButton
+      Align = Client
+      StyledSettings = []
+      Size.Width = 150.000000000000000000
+      Size.Height = 37.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Cancelar'
+      TextSettings.Font.Family = 'Cambria'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      OnClick = SpeedButton2Click
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 520
+    Top = 57
+  end
+end
